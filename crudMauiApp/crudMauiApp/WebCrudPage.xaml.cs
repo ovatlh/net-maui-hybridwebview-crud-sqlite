@@ -54,7 +54,7 @@ public partial class WebCrudPage : ContentPage
 
     public async Task<Item?> ReadItemByIdAsync(int id)
     {
-        await Task.Delay(1500); //fake load time
+        //await Task.Delay(1500); //fake load time
         var itemList = await App.GlobalApp.RefItemRepository().ReadAsync(filter: x => x.Id == id);
         var item = itemList.FirstOrDefault();
         return item;
@@ -62,7 +62,7 @@ public partial class WebCrudPage : ContentPage
 
     public async Task<List<Item>> ReadItemListAsync()
     {
-        await Task.Delay(1500); //fake load time
+        //await Task.Delay(1500); //fake load time
         var list = await App.GlobalApp.RefItemRepository().ReadAsync();
         return list;
     }
