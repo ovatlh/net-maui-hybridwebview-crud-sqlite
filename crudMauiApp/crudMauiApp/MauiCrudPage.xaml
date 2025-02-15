@@ -38,6 +38,9 @@
                     </x:Arguments>
                 </Color>
             </CollectionView.BackgroundColor>
+            <CollectionView.EmptyView>
+                <Label Text="No items" />
+            </CollectionView.EmptyView>
             <CollectionView.ItemTemplate>
                 <DataTemplate
                     x:DataType="{x:Type entities:Item}">
