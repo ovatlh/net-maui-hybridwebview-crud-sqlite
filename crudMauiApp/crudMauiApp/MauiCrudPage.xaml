@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="crudMauiApp.MauiCrudPage"
     xmlns:entities="clr-namespace:crudMauiApp.Data.Entities"
-    Title="MauiCrudPage">
+    Title="Maui Crud Page">
     <StackLayout
         Orientation="Vertical"
         Spacing="15"

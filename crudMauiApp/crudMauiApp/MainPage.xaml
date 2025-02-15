@@ -30,6 +30,18 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="btnMauiCrudPage"
+                Text="Maui Crud Page"
+                Clicked="btnMauiCrudPage_Clicked"
+                />
+
+            <Button
+                x:Name="btnWebCrudPage"
+                Text="Web Crud Page"
+                Clicked="btnWebCrudPage_Clicked"
+                />
         </VerticalStackLayout>
     </ScrollView>
 

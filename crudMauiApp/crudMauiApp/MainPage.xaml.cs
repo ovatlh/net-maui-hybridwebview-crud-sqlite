@@ -20,6 +20,16 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private async void btnMauiCrudPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MauiCrudPage());
+        }
+
+        private async void btnWebCrudPage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new WebCrudPage());
+        }
     }
 
 }
