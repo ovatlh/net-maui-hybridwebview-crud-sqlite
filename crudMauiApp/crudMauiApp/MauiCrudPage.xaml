@@ -5,16 +5,12 @@
     x:Class="crudMauiApp.MauiCrudPage"
     xmlns:entities="clr-namespace:crudMauiApp.Data.Entities"
     Title="Maui Crud Page">
-    <StackLayout
-        Orientation="Vertical"
-        Spacing="15"
+    <Grid
+        RowDefinitions="Auto, *"
+        RowSpacing="15"
         Padding="15">
-        <Label
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
-
         <StackLayout
+            Grid.Row="0"
             Orientation="Vertical"
             Spacing="15">
             <Entry
@@ -28,6 +24,7 @@
         </StackLayout>
 
         <CollectionView
+            Grid.Row="1"
             x:Name="clxItem"
             MinimumHeightRequest="100">
             <CollectionView.BackgroundColor>
@@ -65,5 +62,5 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </StackLayout>
+    </Grid>
 </ContentPage>
