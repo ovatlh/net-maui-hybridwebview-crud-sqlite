@@ -12,4 +12,9 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
+    <ShellContent
+        Title="Maui Crud Page"
+        ContentTemplate="{DataTemplate local:MauiCrudPage}"
+        Route="MauiCrudPage" />
+
 </Shell>

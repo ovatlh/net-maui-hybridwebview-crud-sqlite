@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="crudMauiApp.MauiCrudPage"
+    xmlns:entities="clr-namespace:crudMauiApp.Data.Entities"
+    Title="MauiCrudPage">
+    <StackLayout
+        Orientation="Vertical"
+        Spacing="15"
+        Padding="15">
+        <Label
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+
+        <StackLayout
+            Orientation="Vertical"
+            Spacing="15">
+            <Entry
+                x:Name="txtName"
+                Placeholder="Item"
+                ClearButtonVisibility="WhileEditing" />
+            <Button
+                x:Name="btnAction"
+                Text="Action"
+                Clicked="btnAction_Clicked" />
+        </StackLayout>
+
+        <CollectionView
+            x:Name="clxItem"
+            MinimumHeightRequest="100">
+            <CollectionView.BackgroundColor>
+                <Color
+                    x:FactoryMethod="FromRgba">
+                    <x:Arguments>
+                        <x:Double>0</x:Double>
+                        <x:Double>0</x:Double>
+                        <x:Double>0</x:Double>
+                        <x:Double>0.1</x:Double>
+                    </x:Arguments>
+                </Color>
+            </CollectionView.BackgroundColor>
+            <CollectionView.ItemTemplate>
+                <DataTemplate
+                    x:DataType="{x:Type entities:Item}">
+                    <Grid Padding="5">
+                        <Label
+                            Text="{Binding Name}"
+                            VerticalOptions="Center" />
+                        <StackLayout
+                            Orientation="Horizontal"
+                            Spacing="5"
+                            HorizontalOptions="End">
+                            <Button
+                                x:Name="btnUpdate"
+                                Text="Update"
+                                Clicked="btnUpdate_Clicked" />
+                            <Button
+                                x:Name="btnDelete"
+                                Text="Delete"
+                                Clicked="btnDelete_Clicked" />
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>
