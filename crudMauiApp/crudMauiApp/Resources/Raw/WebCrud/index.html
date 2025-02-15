@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Crud</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="scripts/HybridWebView.js"></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <form id="formItem" onsubmit="formItemSubmit(event)">
+        <input type="hidden" name="Id" id="input.Id" />
+        <input type="text" name="Name" id="input.Name" placeholder="Name" required />
+        <button type="submit" id="btn.action">Action</button>
+    </form>
+
+    <div id="item-list-container" class="item-list">
+        <p>Loading</p>
+        <!--<div class="item">
+            <p>{Name}</p>
+            <div class="item-actions">
+                <button onclick="btnUpdateItemAsync(id)">Update</button>
+                <button onclick="btnDeleteItemAsync(id)">Delete</button>
+            </div>
+        </div>-->
+    </div>
+
+    <div class="screen-loading" id="screen-loading">
+        <h1>Loading</h1>
+    </div>
+</body>
+
+</html>
