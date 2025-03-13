@@ -42,6 +42,12 @@
                 Text="Web Crud Page"
                 Clicked="btnWebCrudPage_Clicked"
                 />
+
+            <Button
+                x:Name="btnQuasar"
+                Text="Quasar Web Page"
+                Clicked="btnQuasar_Clicked"
+                />
         </VerticalStackLayout>
     </ScrollView>
 

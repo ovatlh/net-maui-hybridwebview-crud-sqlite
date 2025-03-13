@@ -30,6 +30,11 @@
         {
             await Navigation.PushAsync(new WebCrudPage());
         }
+
+        private async void btnQuasar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new QuasarPage());
+        }
     }
 
 }

@@ -74,6 +74,9 @@
     <MauiXaml Update="MauiCrudPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
+    <MauiXaml Update="QuasarPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
     <MauiXaml Update="WebCrudPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
